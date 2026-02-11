@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Valentine 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body{
+      margin:0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg,#ff9a9e,#fad0c4);
+      text-align:center;
+      padding:30px;
+      overflow:hidden;
+    }
+    .card{
+      background:rgba(255,255,255,0.25);
+      border-radius:25px;
+      padding:25px;
+      max-width:380px;
+      margin:auto;
+      animation: pop 1s ease;
+    }
+    @keyframes pop{
+      from{transform:scale(0.7);opacity:0}
+      to{transform:scale(1);opacity:1}
+    }
+    
+    h2{
+      color:#b30059;
+    }
+    p{
+      color:#4d0026;
+      font-size:15px;
+      line-height:1.6;
+    }
+    button{
+      padding:12px 22px;
+      font-size:16px;
+      border:none;
+      border-radius:25px;
+      margin:10px;
+      cursor:pointer;
+    }
+    .yes{
+      background:#ff3366;
+      color:white;
+    }
+    .no{
+      background:#333;
+      color:white;
+      position:absolute;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="card">
+  
+
+  <h2>Hey My Love ❤️</h2>
+
+  <p>
+ From the moment you entered my life, everything started feeling softer and warmer 🥺<br><br>
+
+You are the best thing ever happened to me,<br>
+Ik some times i am rude, give u lots of attitude ,<br> always fights with u but trust me <br>I love you more than anything 💕<br><br>
+
+I need nothing just u just us forever🧿❤️<br>
+And with you every day feels worth living ✨<br>
+So today, with all my heart…<br>
+  </p>
+
+  <h3>Will you be my Valentine? 💖</h3>
+
+  <button class="yes" onclick="yesClick()">YES 💘</button>
+  <button class="no" onmouseover="moveNo()">NO 😈</button>
+</div>
+
+<script>
+  function yesClick(){
+    document.body.innerHTML =
+    "<h1 style='margin-top:40%;color:#fff;'>Yayyy 😭❤️<br>I love you forever 💖</h1>";
+  }
+
+  function moveNo(){
+    const btn = document.querySelector('.no');
+    btn.style.left = Math.random()*80 + "vw";
+    btn.style.top = Math.random()*80 + "vh";
+  }
+</script>
+
+</body>
+</html>
